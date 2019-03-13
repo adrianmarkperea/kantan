@@ -1,0 +1,71 @@
+@import 'bulma.css';
+
+.control-item {
+  cursor: pointer;
+}
+
+.entry-item {
+  transition: background-color 250ms ease-out 0s;
+  cursor: pointer;
+}
+
+.entry-item:hover {
+  background-color: hsl(0, 0%, 96%);
+  transition: background-color 250ms ease-out 0s;
+}
+
+.entry-item.is-editing {
+  cursor: inherit;
+}
+
+.entry-item.is-selected {
+  background-color: hsl(171, 100%, 41%);
+}
+
+.icon {
+  color: hsl(0, 0%, 71%);
+}
+
+.icon[data-action="edit"]:hover {
+  color: hsl(171, 100%, 41%);
+}
+
+.icon[data-action="save"]:hover {
+  color: hsl(48, 100%, 67%);
+}
+
+.icon[data-action="delete"]:hover {
+  color: hsl(348, 100%, 61%);
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-text {
+  padding: 64px;
+}
+
+.arrow-container.aligned-right {
+  justify-content: flex-end;
+}
+
+.arrow-container.aligned-left {
+  justify-content: flex-start;
+}
+
+.arrow {
+  color: hsl(0, 0%, 86%);
+  cursor: pointer;
+  transition: color 250ms ease-out 0s;
+}
+
+.arrow:hover {
+  color: hsl(0, 0%, 48%);
+  transition: color 250ms ease-out 0s;
+}

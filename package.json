@@ -1,0 +1,15 @@
+{
+  "name": "html-kantan",
+  "version": "1.0.0",
+  "description": "Easy to use flash-cards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Mark Perea",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "express": "^4.16.4"
+  }
+}

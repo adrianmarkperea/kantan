@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Kantan - Flash Cards</title>
+</head>
+<body>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">
+          Kantan
+        </h1>
+        <h2 class="subtitle">
+          Easy to use flash cards 
+        </h2>
+      </div> 
+    </div>
+  </section>
+
+  <section class="section">
+    <div id="main" class="container">
+      <h3 class="title is-3">
+        Select which items you want to include in the quiz 
+      </h3>
+
+      <div id="entries" class="content"></div>
+
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <a id="add-button" class="button is-primary">Add</a>
+          </div>
+          <div class="level-item">
+            <a id="save-button" class="button is-success">Save</a>
+          </div>
+        </div> 
+        <div class="level-right">
+          <div class="level-item">
+            <a id="quiz-button" class="button is-info" disabled>Start Quiz</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div id="quiz" class="container is-hidden">
+      <div class="columns">
+        <div class="column is-three-fifths is-offset-one-fifth">
+          <h3 class="title is-3">
+            Quiz
+          </h3>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-one-fifth has-text-right arrow-container aligned-right">
+          <span class="icon arrow" data-action="previous-card">
+            <i class="fas fa-chevron-left fa-lg"></i>  
+          </span>
+        </div> 
+        <div class="column is-three-fifths">
+          <div class="card flash-card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Front 
+              </p> 
+            </header>
+            <div class="card-content">
+              <p class="card-text has-text-centered">Hello Pole!</p> 
+            </div>
+          </div> 
+        </div> 
+
+        <div class="column is-one-fifth arrow-container aligned-left">
+          <span class="icon arrow" data-action="next-card">
+            <i class="fas fa-chevron-right fa-lg"></i>  
+          </span>
+        </div> 
+      </div>
+
+      <div class="columns">
+        <div class="column is-three-fifths is-offset-one-fifth">
+          <div class="level">
+            <div class="level-left">
+              <button id="back-to-main" class="button is-primary">Back</button>
+            </div>
+            <div class="level-right has-text-grey-light">
+              <span id="current-card-number">1</span>/<span id="max-card-number">2</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="row-handler.js"></script>
+  <script src="quiz.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
