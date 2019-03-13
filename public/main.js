@@ -13,7 +13,23 @@ stateEls[STATE_QUIZ] = quizEl;
 const entriesEl = document.getElementById('entries');
 const entryItems = JSON.parse(
   localStorage.getItem(ENTRIES_LOCAL_STORAGE_KEY)
-) || [];
+) || [
+  {
+    id: 1,
+    front: 'Ohayougozaimasu',
+    back: 'Good morning',
+  },
+  {
+    id: 2,
+    front: 'Konnichwa',
+    back: 'Good afternoon',
+  },
+  {
+    id: 3,
+    front: 'Konbanwa',
+    back: 'Good evening',
+  },
+];
 
 const selectedEntryItems = [];
 
